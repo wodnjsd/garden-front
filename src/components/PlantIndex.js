@@ -27,9 +27,6 @@ function PlantIndex() {
                     <div className="media-content">
                       <p className="title is-4">{plant.name}</p>
                       <p className="subtitle is-6">{'Common Name: ' + plant.commonName}</p>
-                      <p className="subtitle is-6">{'About: ' + plant.about}</p>
-                      <p className="subtitle is-6">{'This Plant Likes: ' + plant.likes}</p>
-                      <p className="subtitle is-6">{'Size: ' + plant.size}</p>
                     </div>
                   </div>
                 </div>
