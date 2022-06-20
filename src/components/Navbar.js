@@ -8,7 +8,7 @@ import React from "react"
 function Navbar() {
   return (
     <>
-      {/* Lines below: Navbar is created in Header and has Home, Characters, Show Character, Favourite Character tabs that link to the Home, Characters, Show Character, Favourite Character components. */}
+      {/* Lines below: Navbar is created in Header and has Home, Plants, Show Plant, Login, and Register tabs that link to the Home.js, PlantIndex.js, PlantShow.js, Login.js, and Register.js components. */}
       <header>
         {/* Lines below: "navbar is-dark", "container", "navbar-brand", "navbar-item" imports class names from bulma */}
         <nav className="navbar is-dark">
@@ -16,21 +16,25 @@ function Navbar() {
             <div className="navbar-brand">
               {/*Line below: Link to="/" creates default page as Home page */}
               <Link to="/" className="navbar-item">
-                {/* Line below: Home tab, imports class name "home" from main.scss */}
-                <h1 id="home">Home</h1>
+                {/* Line below: Home tab */}
+                <h1>Home</h1>
               </Link>
-              <Link to="/characters" className="navbar-item">
-                {/* Line below: Characters tab, imports class name "characters" from main.scss */}
-                <h1 id="characters">Characters</h1>
+              <Link to="/plants" className="navbar-item">
+                {/* Line below: PlantIndex.js. tab */}
+                <h1>Plants</h1>
               </Link>
-              {/* Line below: Link to="/characters/:showcharacters" creates a link params variable that changes based on which character name button we click on. Example: if we click on Dobby, the link will be /characters/dobby */}
-              <Link to="/characters/:showcharacters" className="navbar-item">
-                {/* Line below: Show Character tab, imports class name "showcharacter" from main.scss */}
-                <h1 id="showcharacter">Show Character</h1>
+              {/* Line below: Link to="/plants/:plantId" creates a link params variable that changes based on which plant name button we click on. Example: if we click on Cactus, the link will be /plants/cactus */}
+              <Link to="/plants/:plantId" className="navbar-item">
+                {/* Line below: PlantShow.js tab */}
+                <h1>Show Plant</h1>
               </Link>
-              <Link to="/favourites" className="navbar-item">
-                {/* Line below: Favourite Characters tab, imports class name "favouritecharacter" from main.scss */}
-                <h1 id="favouritecharacter">Favourite Characters</h1>
+              <Link to="/login" className="navbar-item">
+                {/* Line below: Login.js tab */}
+                <h1>Login</h1>
+              </Link>
+              <Link to="/register" className="navbar-item">
+                {/* Line below: Register.js tab */}
+                <h1>Register</h1>
               </Link>
             </div>
           </div>
