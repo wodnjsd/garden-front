@@ -6,11 +6,11 @@ export default function Register() {
   // ! Using react router to navigate
   const navigate = useNavigate()
   // ! Put our form fields in state.
-  const [formData, setFormData] = React.useState({
-    username: 'rosh',
-    email: 'rosh@rosh.com',
-    password: 'rosh123',
-    passwordConfirmation: 'rosh123',
+  const [formData, setFormData] = useState({
+    username: '',
+    email: '',
+    password: '',
+    passwordConfirmation: '',
   })
 
   // !Errors
