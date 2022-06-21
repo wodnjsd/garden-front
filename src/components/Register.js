@@ -50,9 +50,9 @@ export default function Register() {
               className="input"
               type="text"
               name={'username'} 
-              // ! Adding these 2 fields means your component is 'controlled'. This is good practice!
+              // ! Adding these 2 fields means your component is 'controlled'. This is good practice!!
               value={formData.username}
-              onChange={handleChange}
+              onChange={handleChange}        
             />
           </div>
         </div>
