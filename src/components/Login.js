@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
 
@@ -26,7 +26,7 @@ export default function Login() {
       const { data } = await axios.post('/api/login', formData)
       localStorage.setItem('token', data.token)
       console.log(data.token)
-      navigate('/coachella')
+      navigate('/')
     } catch (err) {
       console.log(err.response.data)
     }
