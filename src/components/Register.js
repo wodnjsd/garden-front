@@ -29,6 +29,7 @@ export default function Register() {
 
     try {
       const { data } = await axios.post('/api/register', formData)
+      console.log(data)
       // ! Navigate to the /login page. 
       navigate('/login')
 
