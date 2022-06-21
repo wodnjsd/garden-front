@@ -57,7 +57,7 @@ function PlantShow() {
                 <figure className="image">
                   <img src={plant.image} alt={plant.name} />
                 </figure>
-                {isCreator(plant.user) && <button
+                {isCreator(plant.user._id) && <button
                   className="button is-danger"
                   onClick={handleDelete}
                 >
@@ -100,7 +100,7 @@ function PlantShow() {
                 <hr />
                 <p>{"£" + plant.price}</p>
                 <hr />
-                <button className="button is-info">
+                <button className="button is-success">
                   Add to Cart
                 </button>
                 <hr />
@@ -113,15 +113,16 @@ function PlantShow() {
               return <article key={review._id} className="media">
                 <div className="media-content">
                   <div className="content">
+                    {console.log(review)}
                     <p className="subtitle">
-                      {review.createdAt}
+                      {review.postedOn}
                     </p>
                     <p className="subtitle">
-                      {review.user.username}
+                      Username: {review.user.username}
                     </p>
-                    <p className="subtitle">
+                    {/* <p className="subtitle">
                       {review.rating}/10
-                    </p>
+                    </p> */}
                     <p>{review.content}</p>
                   </div>
                 </div>
@@ -143,7 +144,7 @@ function PlantShow() {
                 <div className="field">
                   <p className="control">
                     <button
-                      className="button is-info"
+                      className="button is-link is-light"
                       onClick={handleReview}
                     >
                       Submit

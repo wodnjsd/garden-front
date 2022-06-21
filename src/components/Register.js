@@ -6,11 +6,11 @@ export default function Register() {
   // ! Using react router to navigate
   const navigate = useNavigate()
   // ! Put our form fields in state.
-  const [formData, setFormData] = React.useState({
-    username: 'rosh',
-    email: 'rosh@rosh.com',
-    password: 'rosh123',
-    passwordConfirmation: 'rosh123',
+  const [formData, setFormData] = useState({
+    username: "",
+    email: "",
+    password: "",
+    passwordConfirmation: "",
   })
 
   // !Errors
@@ -47,13 +47,12 @@ export default function Register() {
 
     } catch (error) {
       // ! Print out the response form the backend if there's an error
-      console.log(error.response.data)
+      console.log(error)
       setErrors(error.response.data.errors)
     }
   }
 
-  console.log(formData)
-
+  console.log(errors)
 
   return <div className="section">
     <div className="container">
@@ -85,7 +84,7 @@ export default function Register() {
               onChange={handleChange}
             />
             {/* // ! Really nice custom error message */}
-            {errors.email && <small className="has-text-danger">{errors.username}</small>}
+            {errors.email && <small className="has-text-danger">{errors.email}</small>}
           </div>
         </div>
         <div className="field">
@@ -100,7 +99,7 @@ export default function Register() {
               onChange={handleChange}
             />
             {/* // ! Really nice custom error message */}
-            {errors.password && <small className="has-text-danger">{errors.username}</small>}
+            {errors.password && <small className="has-text-danger">{errors.password}</small>}
           </div>
         </div>
         <div className="field">
@@ -115,7 +114,7 @@ export default function Register() {
               onChange={handleChange}
             />
             {/* // ! Really nice custom error message */}
-            {errors.passwordConfirmation && <small className="has-text-danger">{errors.username}</small>}
+            {errors.passwordConfirmation && <small className="has-text-danger">{errors.passwordConfirmation}</small>}
           </div>
         </div>
         <button className="button">Submit</button>
