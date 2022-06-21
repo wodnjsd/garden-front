@@ -2,6 +2,8 @@ import React from 'react'
 import Home from './components/Home'
 import PlantIndex from './components/PlantIndex'
 import PlantShow from './components/PlantShow'
+import Register from './components/Register'
+import Login from './components/Login'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Navbar from "./components/Navbar"
 
@@ -18,6 +20,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/plants" element={<PlantIndex />} />
         <Route path="/plants/:plantId" element={<PlantShow />} />
+        <Route path="/register" element={<Register/>} />
+        <Route path="/login" element={<Login/>} />
       </Routes>
     </Router>
   )
