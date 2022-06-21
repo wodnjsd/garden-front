@@ -28,10 +28,6 @@ function Navbar() {
                 <h1>Plant Care</h1>
               </Link>
               {/* Line below: Link to="/plants/:plantId" creates a link params variable that changes based on which plant name button we click on. Example: if we click on Cactus, the link will be /plants/cactus */}
-              <Link to="/plants/:plantId" className="navbar-item">
-                {/* Line below: PlantShow.js tab */}
-                <h1>Show Plant</h1>
-              </Link>
               <Link to="/login" className="navbar-item">
                 {/* Line below: Login.js tab */}
                 <h1>Login</h1>

@@ -7,10 +7,10 @@ export default function Register() {
   const navigate = useNavigate()
   // ! Put our form fields in state.
   const [formData, setFormData] = useState({
-    username: "",
-    email: "",
-    password: "",
-    passwordConfirmation: "",
+    username: '',
+    email: '',
+    password: '',
+    passwordConfirmation: '',
   })
 
   // !Errors
