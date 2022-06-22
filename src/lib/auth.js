@@ -13,7 +13,7 @@ export function getLoggedInUserId() {
   const decodedObj = JSON.parse(decodedString)
   return decodedObj.userId
 }
-
+// testing push
 // ! Writing a function to check if the logged in user created something.
 export function isCreator(userIdToCompare) {
   if (!userIdToCompare) return false

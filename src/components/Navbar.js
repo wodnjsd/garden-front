@@ -23,11 +23,11 @@ function Navbar() {
                 {/* Line below: PlantIndex.js. tab */}
                 <h1>Plants</h1>
               </Link>
-              {/* Line below: Link to="/plants/:plantId" creates a link params variable that changes based on which plant name button we click on. Example: if we click on Cactus, the link will be /plants/cactus */}
-              <Link to="/plants/:plantId" className="navbar-item">
-                {/* Line below: PlantShow.js tab */}
-                <h1>Show Plant</h1>
+              <Link to="/plantcare" className="navbar-item">
+                {/* Line below: PlantCare.js tab */}
+                <h1>Plant Care</h1>
               </Link>
+              {/* Line below: Link to="/plants/:plantId" creates a link params variable that changes based on which plant name button we click on. Example: if we click on Cactus, the link will be /plants/cactus */}
               <Link to="/login" className="navbar-item">
                 {/* Line below: Login.js tab */}
                 <h1>Login</h1>
@@ -35,6 +35,10 @@ function Navbar() {
               <Link to="/register" className="navbar-item">
                 {/* Line below: Register.js tab */}
                 <h1>Register</h1>
+              </Link>
+              <Link to="/Cart" className="navbar-item">
+                {/* Line below: Cart.js tab */}
+                <h1>Cart</h1>
               </Link>
             </div>
           </div>
