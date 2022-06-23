@@ -1,3 +1,18 @@
-h1 {
-  font-size: 25px;
+//Navbar
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  padding: 10px 20px;
+  font-size: 50pt;
+  color: green;
+}
+
+h1:hover {
+  background-color: white;
+}
+
+.container {
+  flex: display;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
