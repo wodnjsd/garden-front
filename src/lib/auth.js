@@ -19,3 +19,17 @@ export function isCreator(userIdToCompare) {
   if (!userIdToCompare) return false
   return userIdToCompare === getLoggedInUserId()
 }
+
+export function getLoggedInEmail() {
+  if (!localStorage) return false
+  const email = localStorage.getItem("email")
+  if (!email) return false
+  return email
+}
+
+export function isAdmin(emailToCompare){
+  if (!emailToCompare) return false
+  return emailToCompare === "spike@ibegyourgarden.com"
+
+
+}

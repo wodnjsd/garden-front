@@ -3,9 +3,14 @@ import { Link } from "react-router-dom"
 // import React runs react
 import React from "react"
 
+// import { isAdmin, getLoggedInEmail } from "../lib/auth"
+
 //Lines below: create Navbar function
 // ! The one difference in this navigation, are the Link components.
 function Navbar() {
+
+  
+
   return (
     <>
       {/* Lines below: Navbar is created in Header and has Home, Plants, Show Plant, Login, and Register tabs that link to the Home.js, PlantIndex.js, PlantShow.js, Login.js, and Register.js components. */}
@@ -36,10 +41,22 @@ function Navbar() {
                 {/* Line below: Register.js tab */}
                 <h2>Register</h2>
               </Link>
+              {(localStorage.getItem('admin') === 'true') &&
+                <Link to="/createplant" className="navbar-item">
+                  {/* Line below: Cart.js tab */}
+                  <h2>Create Plant</h2>
+                </Link>}
               <Link to="/Cart" className="navbar-item">
                 {/* Line below: Cart.js tab */}
                 <h2>Cart</h2>
               </Link>
+              <Link to="/" className="navbar-item">
+                <button className="navbar-item"
+                  onClick={localStorage.clear()}>Log out</button>
+              </Link>
+              {/* <Link to="/logout" className="navbar-item">
+                <h2>Log Out</h2>
+              </Link> */}
             </div>
           </div>
         </nav>
