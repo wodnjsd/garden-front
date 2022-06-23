@@ -19,15 +19,25 @@ export default function Login() {
     })
   }
 
+
+
+
+
   async function handleSubmit(e) {
     e.preventDefault()
 
     try {
       const { data } = await axios.post('/api/login', formData)
       localStorage.setItem('token', data.token)
+      localStorage.setItem('email', data.user.email)
       console.log(data.token)
       console.log(data)
+
+      if (data.user.isAdmin === true) {
+        localStorage.setItem('admin', 'true')
+      }
       navigate('/')
+    
     } catch (err) {
       console.log(err.response.data)
     }
