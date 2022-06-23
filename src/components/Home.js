@@ -4,7 +4,7 @@ function Home() {
       <div className="hero-body">
         <div className="container">
           <p className="title is-1 has-text-centered has-text-black">
-            Home
+            I Beg Your Garden?!
           </p>
         </div>
       </div>
