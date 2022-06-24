@@ -7,6 +7,9 @@ import Login from './components/Login'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Navbar from "./components/Navbar"
 import CreatePlant from './components/CreatePlant'
+// import Cart from './components/Cart'
+
+
 
 function App() {
   // ! 1) You need a router. You'll pretty always use BrowserRouter
@@ -23,6 +26,7 @@ function App() {
         <Route path="/plants/:plantId" element={<PlantShow />} />
         <Route path="/register" element={<Register/>} />
         <Route path="/login" element={<Login/>} />
+        {/* <Route path="/cart" element={<Cart />} /> */}
         {/* <Route path="/logout" element={<Logout/>} /> */}
         <Route path="/createplant" element={<CreatePlant/>} />
 
