@@ -39,7 +39,6 @@ function PlantShow() {
     } catch (e) {
       console.log(e)
     }
-
   }
 
 
