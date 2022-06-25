@@ -5,15 +5,35 @@ import axios from 'axios'
 
 function PlantShow() {
   const [plant, setPlant] = React.useState(undefined)
+  // const [user, setUser] = React.useState(undefined)
   const [reviewContent, setReviewContent] = React.useState('')
+  // const [cartContent, setCartContent] = React.useState('')
   const navigate = useNavigate()
   const { plantId } = useParams()
+  // const { userId } = useParams()
 
   React.useEffect(() => {
     fetch(`/api/plants/${plantId}`)
       .then(resp => resp.json())
       .then(data => setPlant(data))
   }, [plantId])
+
+  async function handleCart() {
+    try {
+      await axios.post(`/api/plants/${plant._id}`, 
+      // const { data } = await axios.post(
+      //   `/api/plants/${plant._id}`,
+        { content: plant },
+        {
+          headers: { Authorization: `Bearer ${localStorage.getItem('token')}` },
+        }
+      )
+      // setUser(data)
+      console.log()
+    } catch (e) {
+      console.log(e)
+    }
+  }
 
   async function handleDelete() {
     try {
@@ -99,7 +119,8 @@ function PlantShow() {
                 <hr />
                 <p>{"£" + plant.price}</p>
                 <hr />
-                <button className="button is-success">
+                <button className="button is-success"
+                  onClick={handleCart}>
                   Add to Cart
                 </button>
                 <hr />
