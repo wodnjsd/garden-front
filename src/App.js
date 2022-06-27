@@ -7,7 +7,7 @@ import Login from './components/Login'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Navbar from "./components/Navbar"
 import CreatePlant from './components/CreatePlant'
-import Cart from './components/Cart'
+import Cart from './components/Cartstyle'
 
 
 

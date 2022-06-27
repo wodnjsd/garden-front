@@ -25,7 +25,7 @@ function Cart() {
   return <section className="section">
     <div className="container">
       {cart ? (
-        cart.map((cart, index) => {
+        cart.map((item, index) => {
           return (
             <div
               key={index}
@@ -37,17 +37,17 @@ function Cart() {
                     <div className="card-content">
                       <div className="media">
                         <div className="media-content">
-                          <p className="title is-4">{cart[1].name}</p>
+                          <p className="title is-4">{item.name}</p>
                         </div>
                       </div>
                     </div>
                     <div className="card-image">
                       <figure className="image is-4by3">
-                        <img src={cart.image} alt={cart[1].name} />
+                        <img src={item.image} alt={item.name} />
                       </figure>
                     </div>
                     <p className="subtitle is-6">
-                      {"Price: £" + cart[1].price}
+                      {"Price: £" + item.price}
                     </p>
                   </div>
                 </div>
