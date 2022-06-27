@@ -19,19 +19,19 @@ function PlantIndex() {
     <div className="container">
       <div className="columns is-multiline is-mobile">
         {plant.map((plant, index) => {
-          return <div key={index} className="column is-one-third-desktop is-half-tablet is-half-mobile">
+          return <div key={index} className="column is-one-quarter-desktop is-third-tablet is-half-mobile">
             <Link to={`/plants/${plant._id}`}>
               <div className="card">
                 <div className="card-content">
                   <div className="media">
                     <div className="media-content">
                       <p className="title is-4">{plant.name}</p>
-                      <p className="subtitle is-6">{'Common Name: ' + plant.commonName}</p>
+                      <p className="subtitle is-6">{plant.commonName}</p>
                     </div>
                   </div>
                 </div>
                 <div className="card-image">
-                  <figure className="image is-4by3">
+                  <figure className="image is-1by1">
                     <img src={plant.image} alt={plant.name} />
                   </figure>
                 </div>

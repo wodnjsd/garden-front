@@ -22,7 +22,7 @@ function Cart() {
 
   console.log(cart);
   // console.log(data)
-  return <section className="section">
+  return ( <section className="section">
     <div className="container">
       {cart ? (
         cart.map((cart, index) => {
@@ -37,17 +37,17 @@ function Cart() {
                     <div className="card-content">
                       <div className="media">
                         <div className="media-content">
-                          <p className="title is-4">{cart[1].name}</p>
+                          <p className="title is-4">{cart.name}</p>
                         </div>
                       </div>
                     </div>
                     <div className="card-image">
                       <figure className="image is-4by3">
-                        <img src={cart.image} alt={cart[1].name} />
+                        <img src={cart.image} alt={cart.name} />
                       </figure>
                     </div>
                     <p className="subtitle is-6">
-                      {"Price: £" + cart[1].price}
+                      {"Price: £" + cart.price}
                     </p>
                   </div>
                 </div>
@@ -59,7 +59,8 @@ function Cart() {
         <p>... loading</p>
       )}
     </div>
-  </section>;
+  </section>
+  )
 }
 
 export default Cart;
