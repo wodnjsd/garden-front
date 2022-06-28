@@ -3,20 +3,20 @@ import { Link } from "react-router-dom"
 // import React runs react
 import React from "react"
 
-// import { isAdmin, getLoggedInEmail } from "../lib/auth"
+import { getLoggedInEmail } from "../lib/auth"
 
 //Lines below: create Navbar function
 // ! The one difference in this navigation, are the Link components.
 function Navbar() {
 
-  const [ logOut, setLogOut ] = React.useState(false)
+  // const [ loggedOut, setLoggedOut ] = React.useState(false)
 
-  function Logout() {
-    setLogOut(true)
-    if (logOut === true) {
-      localStorage.clear()
-    }
-  }
+  // function handleLogout() {
+  //   if (getLoggedInEmail()) {
+  //     setLoggedOut(true)
+  //   } else
+  //     setLoggedOut(true)
+  // }
 
 
   return (
@@ -41,33 +41,32 @@ function Navbar() {
                 <h2>Plant Care</h2>
               </Link>
               {/* Line below: Link to="/plants/:plantId" creates a link params variable that changes based on which plant name button we click on. Example: if we click on Cactus, the link will be /plants/cactus */}
-              <Link to="/login" className="navbar-item">
-                {/* Line below: Login.js tab */}
-                <h2>Login</h2>
-              </Link>
-              <Link to="/register" className="navbar-item">
-                {/* Line below: Register.js tab */}
-                <h2>Register</h2>
-              </Link>
+
               {(localStorage.getItem('admin') === 'true') &&
                 <Link to="/createplant" className="navbar-item">
                   {/* Line below: Cart.js tab */}
                   <h2>Create Plant</h2>
                 </Link>}
+          
+              <Link to="/Questionnaire" className="navbar-item">
+                {/* /* Line below: PlantIndex.js. tab */}
+                <h2>Questionnaire</h2>
+              </Link>
               <Link to="/Cart" className="navbar-item">
                 {/* Line below: Cart.js tab */}
                 <h2>Cart</h2>
               </Link>
-              <Link to="/" className="navbar-item">
-                {!logOut && <button className="navbar-item"
-                  onClick={Logout}>Log out</button>}
-              </Link>
-              {/* <Link to="/logout" className="navbar-item">
-                <h2>Log Out</h2>
-              </Link> */}
-              <Link to="/Questionnaire" className="navbar-item">
-                {/* Line below: PlantIndex.js. tab */}
-                <h2>Questionnaire</h2>
+              {!getLoggedInEmail() && <Link to="/login" className="navbar-item">
+                {/* Line below: Login.js tab */}
+                <h2>Login</h2>
+              </Link>}  
+              {getLoggedInEmail() && <Link to="/" className="navbar-item"
+                onClick={localStorage.clear()}>
+                <h2>Logout</h2>
+              </Link>}
+              <Link to="/register" className="navbar-item">
+                {/* Line below: Register.js tab */}
+                <h2>Register</h2>
               </Link>
             </div>
           </div>
