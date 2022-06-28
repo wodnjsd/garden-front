@@ -9,6 +9,7 @@ function Cart() {
   const { plantName } = useParams()
   const [checkOut, setCheckOut] = React.useState(false)
   // const [total, setTotal] = React.useState(0)
+  // let data = null
 
   React.useEffect(() => {
     async function fetchCart() {
@@ -23,7 +24,7 @@ function Cart() {
       }
     }
     fetchCart();
-  }, [cart]);
+  }, []);
 
   async function handleDelete() {
     try {
@@ -31,6 +32,10 @@ function Cart() {
         headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
       })
       console.log(plantName)
+      const { data } = await axios.get(`/api/cart`, {
+        headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
+      });
+      setCart(data.cart)
     } catch (e) {
       console.log(e)
     }
@@ -60,7 +65,7 @@ function Cart() {
                   <div className="columns is-mobile">
                     <div className="column is-one-quarter">
                       <div className="card-image">
-                        <figure className="image is-4by3">
+                        <figure className="image is-square">
                           <img src={item.image} alt={item.name} />
                         </figure>
                       </div>
@@ -85,30 +90,33 @@ function Cart() {
         <p> Your bag appears to be empty </p>
       )}
     </div>
-    <div className="columns is-mobile">
-      <div className="column is-10 has-text-weight-bold">
-        Total:
-      </div>
+    <hr />
+    <div className="block">
+      <div className="columns is-mobile">
+        <div className="column is-10 has-text-weight-bold is-size-4">
+          Total:
+        </div>
 
-      <div className="column">
-        £ {cart ? (
-          cart.reduce(function (acc, item) {
-            return acc + item.price
-          }, 0)) : (
-          <p>Loading...</p>)
-        }
+        <div className="column is-size-5">
+          £ {cart ? (
+            cart.reduce(function (acc, item) {
+              return acc + item.price
+            }, 0)) : (
+            <p>Loading...</p>)
+          }
+        </div>
       </div>
-
     </div>
-    <section>
-      <button className="button is-primary"
+    <hr />
+    <section className="has-text-right">
+      <button className="button is-success is-light"
         onClick={handleCheckout} >
         Checkout 🔒
       </button>
 
     </section>
-    <footer>
-      <Link
+    <footer className="has-text-left">
+      <Link className="has-text-success-dark"
         to="/plants">← Return to shopping</Link>
     </footer>
   </section>;
