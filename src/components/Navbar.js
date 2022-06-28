@@ -57,6 +57,10 @@ function Navbar() {
               {/* <Link to="/logout" className="navbar-item">
                 <h2>Log Out</h2>
               </Link> */}
+              <Link to="/Questionnaire" className="navbar-item">
+                {/* Line below: PlantIndex.js. tab */}
+                <h2>Questionnaire</h2>
+              </Link>
             </div>
           </div>
         </nav>

@@ -8,6 +8,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Navbar from "./components/Navbar"
 import CreatePlant from './components/CreatePlant'
 import Cart from './components/Cartstyle'
+import Questionnaire from './components/Questionnaire'
 
 
 
@@ -29,6 +30,7 @@ function App() {
         <Route path="/cart" element={<Cart />} />
         {/* <Route path="/logout" element={<Logout/>} /> */}
         <Route path="/createplant" element={<CreatePlant/>} />
+        <Route path="/Questionnaire" element={<Questionnaire/>} />
 
       </Routes>
     </Router>
