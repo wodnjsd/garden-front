@@ -45,6 +45,7 @@ function Home() {
           
 
           <p className="subtitle is-4">Some recent purchases . . .</p>
+          
           <Carousel 
             swipeable={false}
             draggable={false}
