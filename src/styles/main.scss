@@ -1,4 +1,6 @@
-// @import "~bulma/bulma.sass";
+@import "~bulma/bulma.sass";
+
+// Import react-modal-video for Plant Care YouTube Videos
 @import 'node_modules/react-modal-video/scss/modal-video.scss';
 
 //Navbar
@@ -40,6 +42,30 @@ h1:hover {
   flex-direction: row;
 }
 
+.link-plant-care, .btn-plant-care {
+  font-size: 50pt;
+  font-family: 'Julius Sans One', sans-serif;
+  color: black;
+  text-align: center;
+  background-color: #1AB385;
+}
+
+.btn-plant-care {
+  display: block;
+  margin: auto;
+}
+
+.article-plant-care {
+  font-size: 50pt;
+  font-family: 'Julius Sans One', sans-serif;
+  text-align: center;
+  background-color: #FFFFFF;
+}
+
+
+.link-plant-care:hover, .btn-plant-care:hover, .article-plant-care:hover {
+  background-color: #63B76C;
+}
 .head-text {
   position: relative;
   font-family: 'Julius Sans One', sans-serif;

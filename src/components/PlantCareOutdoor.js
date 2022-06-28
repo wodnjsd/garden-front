@@ -8,17 +8,41 @@ import OutdoorPlantCareVideo from './PlantCareOutdoorVideo'
 function PlantCareOutdoor() {
   return (
     <>
-      <div>
-        <h1>Outdoor</h1>
-        <OutdoorPlantCareVideo />
-        <Link to="/plantcare">
-          {/* Line below: Indoor Plants tab*/}
-          <h1>Back</h1>
-        </Link>
+      <div className="rows">
+
+        {/* Header */}
+        <div className="row">
+          <h1 className="title is-1 has-text-centered has-text-success-dark">
+            Outdoor Plant Care
+          </h1>
+        </div>
+
+        {/* Article and Video */}
+        <div className="row">
+          <div className="column is-full">
+            {/* target="_blank" rel="noopener noreferrer" opens link in new window */}
+            <h2 className="article-plant-care"><a href="https://www.patchplants.com/gb/en/read/plant-care/how-to-keep-your-outdoor-potted-plants-alive-1/" target="_blank" rel="noopener noreferrer">Article: Keeping Your Plants Alive</a></h2>
+          </div>
+        </div>
+      </div>
+
+      <div className="row">
+        <div className="column is-full">
+          <h2><OutdoorPlantCareVideo /></h2>
+        </div>
+
+
+        {/* Back Button */}
+        <div className="row">
+          <Link to="/plantcare">
+            <h3>Back</h3>
+          </Link>
+        </div>
+
       </div>
     </>
   )
 }
 
-// Line below: export Home so it can be imported and used in other .js files
+// Line below: export PlantCareOutdoor so it can be imported and used in other .js files
 export default PlantCareOutdoor
