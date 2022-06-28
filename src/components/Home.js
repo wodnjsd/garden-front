@@ -17,7 +17,7 @@ const responsive = {
     items: 2,
   },
   mobile: {
-    breakpoint: { max: 300, min: 0 },
+    breakpoint: { max: 400, min: 0 },
     items: 1,
   },
 };
@@ -30,6 +30,7 @@ function Home() {
     <section className="hero is-fullheight-with-navbar">
       <div className="hero-body">
         <div className="container">
+         
           <header>
             <div className ="head-text">
               <div className ="head-image">
@@ -41,8 +42,9 @@ function Home() {
               </div>
             </div>
           </header>
+          
 
-          <p className="subtitle is-4">Some recent purchases...</p>
+          <p className="subtitle is-4">Some recent purchases . . .</p>
           <Carousel 
             swipeable={false}
             draggable={false}
@@ -79,8 +81,7 @@ function Home() {
                 <a href="">FAQs</a>
                 <br />
               </div>
-              <p>
-                
+              <p className="is-size-7">                
                 <strong>IBYG</strong> by <a href="https://www.linkedin.com/in/jeanzle-albalate-38a047171/">Jeanzle</a>, <a href="https://www.linkedin.com/in/roshanaka/">Rosh</a>, <a href="https://github.com/wodnjsd/project-3-frontend">Jae</a> and <a href="https://www.linkedin.com/in/robyn-smith-27187910b/">Robyn</a>. Our code is open-sourced and hosted on <a href="https://github.com/wodnjsd/project-3-frontend">GitHub</a>.
               </p>
             </div>
