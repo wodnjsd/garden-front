@@ -1,5 +1,7 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import { SocialMediaIconsReact } from 'social-media-icons-react';
+
 const responsive = {
   superLargeDesktop: {
     // the naming can be any, depends on you.
@@ -15,7 +17,7 @@ const responsive = {
     items: 2,
   },
   mobile: {
-    breakpoint: { max: 400, min: 0 },
+    breakpoint: { max: 300, min: 0 },
     items: 1,
   },
 };
@@ -28,18 +30,19 @@ function Home() {
     <section className="hero is-fullheight-with-navbar">
       <div className="hero-body">
         <div className="container">
-          <h1 className="title is-1 has-text-centered has-text-success-dark">
-            I Beg Your Garden?!
-          </h1>
-          <h4 className="subtitle is-4 has-text-centered has-text-success-dark">
-            Welcome to the jungle!
-          </h4>
-          <div className="container">
-            <img src='https://res.cloudinary.com/dlxbte5xh/image/upload/v1655905671/pexels-samuel-crosland-2557232_qlespz.jpg' alt="banner image" style={{ maxWidth: 1345 }}></img>
-          </div>
-          
+          <header>
+            <div className ="head-text">
+              <div className ="head-image">
+                <img src = {require('../images/pexels-samuel-crosland-2557232_qlespz.jpg')} alt = "I Beg Your Garden?!" />
+              </div>
+              <div className='text-on-image'>
+                <h3 className="title is-1 has-text-centered">I Beg your Garden?!</h3>
+                <p className="subtitle is-4 has-text-centered">Welcome to the Jungle!</p>
+              </div>
+            </div>
+          </header>
 
-          <p className="has-text-success-dark">Some recent purchases...</p>
+          <p className="subtitle is-4">Some recent purchases...</p>
           <Carousel 
             swipeable={false}
             draggable={false}
@@ -63,6 +66,10 @@ function Home() {
           <footer className="footer">
             <div className="content has-text-centered">
               <div className="container">
+                <SocialMediaIconsReact borderColor="rgba(0,0,0,0.25)" borderWidth="5" borderStyle="dashed" icon="instagram" iconColor="rgba(44,42,42,1)" backgroundColor="rgba(61,233,26,0)" iconSize="5" roundness="47%" url="https://instagram.com" size="45" /><lb />
+                <SocialMediaIconsReact borderColor="rgba(0,0,0,0.25)" borderWidth="5" borderStyle="dashed" icon="twitter" iconColor="rgba(44,42,42,1)" backgroundColor="rgba(61,233,26,0)" iconSize="5" roundness="47%" url="https://twitter.com" size="45" /><lb />
+                <SocialMediaIconsReact borderColor="rgba(0,0,0,0.25)" borderWidth="5" borderStyle="dashed" icon="facebook" iconColor="rgba(44,42,42,1)" backgroundColor="rgba(61,233,26,0)" iconSize="5" roundness="47%" url="https://facebook.com" size="45" />
+                <br />
                 <a href="">About IBYG</a>
                 <br />
 
@@ -73,17 +80,11 @@ function Home() {
                 <br />
               </div>
               <p>
-                <strong>IBYG</strong> by <a href="https://jgthms.com">Jeanzle</a>, <a href="https://jgthms.com">Rosh</a>, <a href="https://jgthms.com">Jae</a> and <a href="https://www.linkedin.com/in/robyn-smith-27187910b/">Robyn</a>. Our code is open-sourced and hosted on <a href="https://github.com/wodnjsd/project-3-frontend">GitHub</a>.
+                
+                <strong>IBYG</strong> by <a href="https://www.linkedin.com/in/jeanzle-albalate-38a047171/">Jeanzle</a>, <a href="https://www.linkedin.com/in/roshanaka/">Rosh</a>, <a href="https://github.com/wodnjsd/project-3-frontend">Jae</a> and <a href="https://www.linkedin.com/in/robyn-smith-27187910b/">Robyn</a>. Our code is open-sourced and hosted on <a href="https://github.com/wodnjsd/project-3-frontend">GitHub</a>.
               </p>
             </div>
           </footer>
-          {/* <div className="container">
-            <footer className="has-background-dark">
-              <p className="has-text-white">About I Beg Your Garden</p>
-              <p className="has-text-white">Contact Us</p>
-              <p className="has-text-white">FAQs</p>
-            </footer>
-          </div> */}
         </div>
       </div>
     </section>

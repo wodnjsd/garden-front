@@ -4,14 +4,14 @@
 
 h1 {
   font-family: 'Julius Sans One', sans-serif;
-  
+
 }
 
 h2 {
   font-family: 'Julius Sans One', sans-serif;
   padding: 10px 20px;
   font-size: 50pt;
-  color: green;
+  color: black;
 }
 
 h4 {
@@ -38,3 +38,15 @@ h1:hover {
   flex-wrap: wrap;
   flex-direction: row;
 }
+
+.head-text {
+  position: relative;
+  font-family: 'Julius Sans One', sans-serif;
+}
+.text-on-image {
+ position: absolute;
+ right: 30%;
+ left: 0%;
+ bottom: 80%;
+}
+
