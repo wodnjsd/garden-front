@@ -2,6 +2,9 @@ import React from 'react'
 import Home from './components/Home'
 import PlantIndex from './components/PlantIndex'
 import PlantShow from './components/PlantShow'
+import PlantCare from './components/PlantCare'
+import PlantCareIndoor from './components/PlantCareIndoor'
+import PlantCareOutdoor from './components/PlantCareOutdoor'
 import Register from './components/Register'
 import Login from './components/Login'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
@@ -25,6 +28,9 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/plants" element={<PlantIndex />} />
         <Route path="/plants/:plantId" element={<PlantShow />} />
+        <Route path="/plantcare" element={<PlantCare />} />
+        <Route path="/plantcare/indoor" element={<PlantCareIndoor />} />
+        <Route path="/plantcare/outdoor" element={<PlantCareOutdoor />} />
         <Route path="/register" element={<Register/>} />
         <Route path="/login" element={<Login/>} />
         <Route path="/cart" element={<Cart />} />
