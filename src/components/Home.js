@@ -30,18 +30,20 @@ function Home() {
     <section className="hero is-fullheight-with-navbar">
       <div className="hero-body">
         <div className="container">
-         
-          <header>
-            <div className ="head-text">
-              <div className ="head-image">
-                <img src = {require('../images/pexels-samuel-crosland-2557232_qlespz.jpg')} alt = "I Beg Your Garden?!" />
+        
+          <div className="columns is-multiline is-mobile">
+            <header>
+              <div className ="head-text">
+                <div className ="head-image">
+                  <img src = {require('../images/pexels-samuel-crosland-2557232_qlespz.jpg')} alt = "I Beg Your Garden?!" />
+                </div>
+                <div className='text-on-image'>
+                  <h3 className="title is-1 has-text-centered">I Beg your Garden?!</h3>
+                  <p className="subtitle is-4 has-text-centered">Welcome to the Jungle!</p>
+                </div>
               </div>
-              <div className='text-on-image'>
-                <h3 className="title is-1 has-text-centered">I Beg your Garden?!</h3>
-                <p className="subtitle is-4 has-text-centered">Welcome to the Jungle!</p>
-              </div>
-            </div>
-          </header>
+            </header>
+          </div>
           
 
           <p className="subtitle is-4">Some recent purchases . . .</p>
@@ -60,12 +62,13 @@ function Home() {
             containerClass="carousel-container"
             removeArrowOnDeviceType={["tablet", "mobile"]}
             itemClass="carousel-item-padding-40-px"
-          >
+          >            
             <div><img src='https://res.cloudinary.com/dlxbte5xh/image/upload/v1655563048/pexels-lachlan-ross-7084309_hxhet2.jpg' alt='Fig Tree'></img></div>
             <div><img src='https://res.cloudinary.com/dlxbte5xh/image/upload/v1656085037/pexels-ekaterina-bolovtsova-9130870_ksqdzw_hw1ruu.jpg' alt='Watermelon Peperomia'></img></div>
             <div><img src='https://res.cloudinary.com/dlxbte5xh/image/upload/v1656085166/pexels-kulbir-7365049_ze1urb_cfyewy.jpg' alt='English Ivy'></img></div>
             <div><img src='https://res.cloudinary.com/dlxbte5xh/image/upload/v1656085351/pexels-karolina-grabowska-5706224_jq5fgp_ykwos8.jpg' alt='Chinese Money Plant'></img></div>
           </Carousel>
+          
           <footer className="footer">
             <div className="content has-text-centered">
               <div className="container">
