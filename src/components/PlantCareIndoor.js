@@ -10,6 +10,11 @@ function PlantCareIndoor() {
     <>
       <div className="rows">
 
+        {/* Header */}
+        <div className="row">
+          <h1>Indoor Plant Care</h1>
+        </div>
+
         {/* Article and Video */}
         <div className="row">
           <div className="columns is-multiline is-mobile">
@@ -17,7 +22,8 @@ function PlantCareIndoor() {
               <IndoorPlantCareVideo />
             </div>
             <div className="column is-half">
-              <IndoorPlantCareVideo />
+              <h2>hello</h2>
+              <h2><a href="https://meetflo.zendesk.com/hc/en-us/articles/230425728-Privacy-Policies">plant care</a></h2>
             </div>
           </div>
         </div>

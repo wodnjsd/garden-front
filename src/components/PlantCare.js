@@ -7,47 +7,41 @@ import React from "react"
 function PlantCare() {
   return (
     <>
-      <div>
-        <h2>Instructional videos on how you can show your plant purchase some TLC!</h2>
-        <Link to="/plantcare/indoor">
-          {/* Line below: Indoor Plants tab*/}
-          <h1>Indoor Plants</h1>
-        </Link>
-        <Link to="/plantcare/outdoor">
-          {/* Line below: Outdoor Plants tab*/}
-          <h1>Outdoor Plants</h1>
-        </Link>
+      <div className="rows">
+
+
+        <div className="row">
+          <p>Show your plant purchase some TLC!</p>
+        </div>
+
+
+        <div className="row">
+          <div className="columns is-multiline is-mobile">
+            <div className="column is-half">
+              <Link className="link-plant-care" to="/plantcare/indoor">
+                {/* Line below: Indoor Plants tab*/}
+                <h1>Indoor Plants</h1>
+              </Link>
+            </div>
+            <div className="column is-half">
+              <Link className="link-plant-care" to="/plantcare/outdoor">
+                {/* Line below: Outdoor Plants tab*/}
+                <h1>Outdoor Plants</h1>
+              </Link>
+            </div>
+          </div>
+        </div>
+
       </div>
+
     </>
   )
 }
 
-// Line below: export Home so it can be imported and used in other .js files
+// Line below: export PlantCare so it can be imported and used in other .js files
 export default PlantCare
 
 
-// import React, { useState } from 'react'
-// import ReactDOM from 'react-dom'
-// import ModalVideo from 'react-modal-video'
-
-// const IndoorPlantCare = () => {
-
-//   const [isOpen, setOpen] = useState(false)
-
-//   return (
-//     <React.Fragment>
-//       <ModalVideo channel='youtube' autoplay isOpen={isOpen} videoId="bZqJNfZoKRA" onClose={() => setOpen(false)} />
-
-//       <button className="btn-primary" onClick={() => setOpen(true)}>Indoor plants</button>
-
-//     </React.Fragment>
-//   )
-// }
-
-// ReactDOM.render(
-//   <IndoorPlantCare />,
-//   document.getElementById('root')
-// )
 
 
 // const OutdoorPlantCare = () => {
