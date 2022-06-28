@@ -12,26 +12,30 @@ function PlantCareIndoor() {
 
         {/* Header */}
         <div className="row">
-          <h1>Indoor Plant Care</h1>
+          <h1 className="title is-1 has-text-centered has-text-success-dark">
+            Indoor Plant Care
+          </h1>
         </div>
 
         {/* Article and Video */}
         <div className="row">
-          <div className="columns is-multiline is-mobile">
-            <div className="column is-half">
-              <IndoorPlantCareVideo />
-            </div>
-            <div className="column is-half">
-              <h2>hello</h2>
-              <h2><a href="https://meetflo.zendesk.com/hc/en-us/articles/230425728-Privacy-Policies">plant care</a></h2>
-            </div>
+          <div className="column is-full">
+            {/* target="_blank" rel="noopener noreferrer" opens link in new window */}
+            <h2 className="article-plant-care"><a href="https://www.nbcnews.com/better/lifestyle/how-keep-your-indoor-plants-alive-ncna1073646" target="_blank" rel="noopener noreferrer">Article: Keeping Your Plants Alive</a></h2>
           </div>
         </div>
+      </div>
+
+      <div className="row">
+        <div className="column is-full">
+          <h2><IndoorPlantCareVideo /></h2>
+        </div>
+
 
         {/* Back Button */}
         <div className="row">
           <Link to="/plantcare">
-            <h1>Back</h1>
+            <h3>Back</h3>
           </Link>
         </div>
 

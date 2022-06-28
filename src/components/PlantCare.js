@@ -11,22 +11,22 @@ function PlantCare() {
 
 
         <div className="row">
-          <p>Show your plant purchase some TLC!</p>
+          <h1 className="title is-1 has-text-centered has-text-success-dark">
+            Show your plant purchase some TLC
+          </h1>
         </div>
 
 
         <div className="row">
           <div className="columns is-multiline is-mobile">
             <div className="column is-half">
-              <Link className="link-plant-care" to="/plantcare/indoor">
-                {/* Line below: Indoor Plants tab*/}
-                <h1>Indoor Plants</h1>
+              <Link to="/plantcare/indoor">
+                <h2 className="link-plant-care">Indoor Plants</h2>
               </Link>
             </div>
             <div className="column is-half">
-              <Link className="link-plant-care" to="/plantcare/outdoor">
-                {/* Line below: Outdoor Plants tab*/}
-                <h1>Outdoor Plants</h1>
+              <Link to="/plantcare/outdoor">
+                <h2 className="link-plant-care">Outdoor Plants</h2>
               </Link>
             </div>
           </div>

@@ -43,22 +43,35 @@ h1:hover {
 }
 
 // Plant Care
-.btn-plant-care {
-  font-size: 50pt;
-  font-family: 'Julius Sans One', sans-serif;
-  background-color: MediumSeaGreen;
-  color: black;
-  border: #008000;
-  border-style: dotted;
-}
+// .btn-plant-care {
+//   font-size: 30pt;
+//   font-family: 'Julius Sans One', sans-serif;
+//   background-color: MediumSeaGreen;
+//   color: black;
+//   border: #008000;
+// }
 
-.link-plant-care {
-  font-size: 70pt;
+.link-plant-care, .btn-plant-care {
+  font-size: 50pt;
   font-family: 'Julius Sans One', sans-serif;
   color: black;
   text-align: center;
+  background-color: #1AB385;
 }
 
-.link-plant-care:hover {
-  color: grey;
+.btn-plant-care {
+  display: block;
+  margin: auto;
+}
+
+.article-plant-care {
+  font-size: 50pt;
+  font-family: 'Julius Sans One', sans-serif;
+  text-align: center;
+  background-color: #FFFFFF;
+}
+
+
+.link-plant-care:hover, .btn-plant-care:hover, .article-plant-care:hover {
+  background-color: #63B76C;
 }
