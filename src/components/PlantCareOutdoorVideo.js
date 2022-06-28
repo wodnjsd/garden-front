@@ -12,7 +12,7 @@ const OutdoorPlantCareVideo = () => {
     <React.Fragment>
       <ModalVideo channel='youtube' autoplay isOpen={isOpen} videoId="o8XZVp0Hwl4" onClose={() => setOpen(false)} />
 
-      <button className="btn-primary" onClick={() => setOpen(true)}>Watch a video on Outdoor Plant Care</button>
+      <button className="btn-plant-care" onClick={() => setOpen(true)}>Watch a video on Outdoor Plant Care</button>
     </React.Fragment>
   )
 }

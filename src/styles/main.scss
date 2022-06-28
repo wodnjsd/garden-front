@@ -1,4 +1,6 @@
-// @import "~bulma/bulma.sass";
+@import "~bulma/bulma.sass";
+
+// Import react-modal-video for Plant Care YouTube Videos
 @import 'node_modules/react-modal-video/scss/modal-video.scss';
 
 //Navbar
@@ -38,4 +40,14 @@ h1:hover {
   flex: display;
   flex-wrap: wrap;
   flex-direction: row;
+}
+
+// Plant Care
+.btn-plant-care {
+  font-size: 50pt;
+  font-family: 'Julius Sans One', sans-serif;
+  background-color: MediumSeaGreen;
+  color: black;
+  border: #008000;
+  border-style: dotted;
 }

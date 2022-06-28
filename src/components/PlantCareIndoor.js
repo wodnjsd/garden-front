@@ -8,13 +8,27 @@ import IndoorPlantCareVideo from './PlantCareIndoorVideo'
 function PlantCareIndoor() {
   return (
     <>
-      <div>
-        <h1>indoor</h1>
-        <IndoorPlantCareVideo />
-        <Link to="/plantcare">
-          {/* Line below: Indoor Plants tab*/}
-          <h1>Back</h1>
-        </Link>
+      <div className="rows">
+
+        {/* Article and Video */}
+        <div className="row">
+          <div className="columns is-multiline is-mobile">
+            <div className="column is-half">
+              <IndoorPlantCareVideo />
+            </div>
+            <div className="column is-half">
+              <IndoorPlantCareVideo />
+            </div>
+          </div>
+        </div>
+
+        {/* Back Button */}
+        <div className="row">
+          <Link to="/plantcare">
+            <h1>Back</h1>
+          </Link>
+        </div>
+
       </div>
     </>
   )
