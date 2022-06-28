@@ -9,7 +9,15 @@ import React from "react"
 // ! The one difference in this navigation, are the Link components.
 function Navbar() {
 
-  
+  const [ logOut, setLogOut ] = React.useState(false)
+
+  function Logout() {
+    setLogOut(true)
+    if (logOut === true) {
+      localStorage.clear()
+    }
+  }
+
 
   return (
     <>
@@ -51,8 +59,8 @@ function Navbar() {
                 <h2>Cart</h2>
               </Link>
               <Link to="/" className="navbar-item">
-                <button className="navbar-item"
-                  onClick={localStorage.clear()}>Log out</button>
+                {!logOut && <button className="navbar-item"
+                  onClick={Logout}>Log out</button>}
               </Link>
               {/* <Link to="/logout" className="navbar-item">
                 <h2>Log Out</h2>

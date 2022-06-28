@@ -7,14 +7,14 @@
 
 h1 {
   font-family: 'Julius Sans One', sans-serif;
-  
+
 }
 
 h2 {
   font-family: 'Julius Sans One', sans-serif;
   padding: 10px 20px;
   font-size: 50pt;
-  color: green;
+  color: black;
 }
 
 h4 {
@@ -42,15 +42,6 @@ h1:hover {
   flex-direction: row;
 }
 
-// Plant Care
-// .btn-plant-care {
-//   font-size: 30pt;
-//   font-family: 'Julius Sans One', sans-serif;
-//   background-color: MediumSeaGreen;
-//   color: black;
-//   border: #008000;
-// }
-
 .link-plant-care, .btn-plant-care {
   font-size: 50pt;
   font-family: 'Julius Sans One', sans-serif;
@@ -75,3 +66,14 @@ h1:hover {
 .link-plant-care:hover, .btn-plant-care:hover, .article-plant-care:hover {
   background-color: #63B76C;
 }
+.head-text {
+  position: relative;
+  font-family: 'Julius Sans One', sans-serif;
+}
+.text-on-image {
+ position: absolute;
+ right: 30%;
+ left: 0%;
+ bottom: 80%;
+}
+
