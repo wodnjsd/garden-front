@@ -1,5 +1,5 @@
 import axios from 'axios'
-import React, { useState }  from 'react'
+import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
 export default function Register() {
@@ -44,6 +44,7 @@ export default function Register() {
       console.log(data)
       // ! Navigate to the /login page.
       navigate('/login')
+      alert("You have now egistered!")
 
     } catch (error) {
       // ! Print out the response form the backend if there's an error
@@ -55,70 +56,75 @@ export default function Register() {
   console.log(errors)
 
   return <div className="section">
-    <div className="container">
-      <form onSubmit={handleSubmit}>
-        <div className="field">
-          <label className="label">Username</label>
-          <div className="control">
-            <input
-              className="input"
-              type="text"
-              name={'username'}
-              // ! Adding these 2 fields means your component is 'controlled.'
-              value={formData.username}
-              onChange={handleChange}
-            />
-            {/* // ! Really nice custom error message */}
-            {errors.username && <small className="has-text-danger">{errors.username}</small>}
+    <h2 className="title is-2">
+      Register
+    </h2>
+    <div className="box">
+      <div className="container">
+        <form onSubmit={handleSubmit}>
+          <div className="field">
+            <label className="label">Username</label>
+            <div className="control">
+              <input
+                className="input"
+                type="text"
+                name={'username'}
+                // ! Adding these 2 fields means your component is 'controlled.'
+                value={formData.username}
+                onChange={handleChange}
+              />
+              {/* // ! Really nice custom error message */}
+              {errors.username && <small className="has-text-danger">{errors.username}</small>}
+            </div>
           </div>
-        </div>
-        <div className="field">
-          <label className="label">Email</label>
-          <div className="control">
-            <input
-              className="input"
-              type="text"
-              name={'email'}
-              // ! Adding these 2 fields means your component is 'controlled.'
-              value={formData.email}
-              onChange={handleChange}
-            />
-            {/* // ! Really nice custom error message */}
-            {errors.email && <small className="has-text-danger">{errors.email}</small>}
+          <div className="field">
+            <label className="label">Email</label>
+            <div className="control">
+              <input
+                className="input"
+                type="text"
+                name={'email'}
+                // ! Adding these 2 fields means your component is 'controlled.'
+                value={formData.email}
+                onChange={handleChange}
+              />
+              {/* // ! Really nice custom error message */}
+              {errors.email && <small className="has-text-danger">{errors.email}</small>}
+            </div>
           </div>
-        </div>
-        <div className="field">
-          <label className="label">Password</label>
-          <div className="control">
-            <input
-              className="input"
-              type="password"
-              name={'password'}
-              // ! Adding these 2 fields means your component is 'controlled.'
-              value={formData.password}
-              onChange={handleChange}
-            />
-            {/* // ! Really nice custom error message */}
-            {errors.password && <small className="has-text-danger">{errors.password}</small>}
+          <div className="field">
+            <label className="label">Password</label>
+            <div className="control">
+              <input
+                className="input"
+                type="password"
+                name={'password'}
+                // ! Adding these 2 fields means your component is 'controlled.'
+                value={formData.password}
+                onChange={handleChange}
+              />
+              {/* // ! Really nice custom error message */}
+              {errors.password && <small className="has-text-danger">{errors.password}</small>}
+            </div>
           </div>
-        </div>
-        <div className="field">
-          <label className="label">Confirm password</label>
-          <div className="control">
-            <input
-              className="input"
-              type="password"
-              name={'passwordConfirmation'}
-              // ! Adding these 2 fields means your component is 'controlled.'
-              value={formData.passwordConfirmation}
-              onChange={handleChange}
-            />
-            {/* // ! Really nice custom error message */}
-            {errors.passwordConfirmation && <small className="has-text-danger">{errors.passwordConfirmation}</small>}
+          <div className="field">
+            <label className="label">Confirm password</label>
+            <div className="control">
+              <input
+                className="input"
+                type="password"
+                name={'passwordConfirmation'}
+                // ! Adding these 2 fields means your component is 'controlled.'
+                value={formData.passwordConfirmation}
+                onChange={handleChange}
+              />
+              {/* // ! Really nice custom error message */}
+              {errors.passwordConfirmation && <small className="has-text-danger">{errors.passwordConfirmation}</small>}
+            </div>
           </div>
-        </div>
-        <button className="button">Submit</button>
-      </form>
+          <button className="button">Submit</button>
+        </form>
+      </div>
     </div>
   </div>
 }
