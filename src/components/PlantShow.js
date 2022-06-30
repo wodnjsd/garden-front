@@ -5,12 +5,9 @@ import axios from 'axios'
 
 function PlantShow() {
   const [plant, setPlant] = React.useState(undefined)
-  // const [user, setUser] = React.useState(undefined)
   const [reviewContent, setReviewContent] = React.useState('')
-  // const [cartContent, setCartContent] = React.useState('')
   const navigate = useNavigate()
   const { plantId } = useParams()
-  // const { userId } = useParams()
 
   React.useEffect(() => {
     fetch(`/api/plants/${plantId}`)
@@ -21,14 +18,13 @@ function PlantShow() {
   async function handleCart() {
     try {
       await axios.post(`/api/plants/${plant._id}`,
-        // const { data } = await axios.post(
-        //   `/api/plants/${plant._id}`,
         { content: plant },
         {
           headers: { Authorization: `Bearer ${localStorage.getItem('token')}` },
         }
       )
       console.log()
+      alert("Successfully added to cart!")
 
     } catch (e) {
       if (!getLoggedInEmail()) {
@@ -63,7 +59,6 @@ function PlantShow() {
       console.log(e)
     }
   }
-
 
   console.log(plant)
   return (
@@ -143,9 +138,6 @@ function PlantShow() {
                     <p className="subtitle">
                       Username: {review.user.username}
                     </p>
-                    {/* <p className="subtitle">
-                      {review.rating}/10
-                    </p> */}
                     <p>{review.content}</p>
                   </div>
                 </div>
@@ -153,11 +145,8 @@ function PlantShow() {
             })}
             {getLoggedInUserId() && <article className="media">
               <div className="media-content">
-
                 <div className="field">
                   <div className="control">
-
-
                     <textarea
                       className="textarea"
                       placeholder="Make a comment.."

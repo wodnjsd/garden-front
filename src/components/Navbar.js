@@ -1,6 +1,5 @@
 // Line below: import { Link } allows you to use link component for us to link all the components together inside the Navbar
 import { Link, useLocation } from "react-router-dom"
-// import React runs react
 import React from "react"
 
 import { getLoggedInEmail } from "../lib/auth"
@@ -53,7 +52,6 @@ function Navbar() {
                   <h2>Create Plant</h2>
                 </Link>}
 
-
               <Link to="/Cart" className="navbar-item">
                 {/* Line below: Cart.js tab */}
                 <h2>Cart</h2>
@@ -63,7 +61,7 @@ function Navbar() {
                 <h2>Login</h2>
               </Link>}
               {loggedIn && <Link to="/" className="navbar-item"
-                onClick={localStorage.clear()}>
+                onClick={localStorage.clear}>
                 <h2>Logout</h2>
               </Link>}
               <Link to="/register" className="navbar-item">
