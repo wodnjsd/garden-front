@@ -1,6 +1,6 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import { SocialMediaIconsReact } from 'social-media-icons-react';
+// import { SocialMediaIconsReact } from 'social-media-icons-react';
 
 const responsive = {
   superLargeDesktop: {
@@ -72,9 +72,9 @@ function Home() {
           <footer className="footer">
             <div className="content has-text-centered">
               <div className="container">
-                <SocialMediaIconsReact borderColor="rgba(0,0,0,0.25)" borderWidth="5" borderStyle="dashed" icon="instagram" iconColor="rgba(44,42,42,1)" backgroundColor="rgba(61,233,26,0)" iconSize="5" roundness="47%" url="https://instagram.com" size="45" /><lb />
+                {/* <SocialMediaIconsReact borderColor="rgba(0,0,0,0.25)" borderWidth="5" borderStyle="dashed" icon="instagram" iconColor="rgba(44,42,42,1)" backgroundColor="rgba(61,233,26,0)" iconSize="5" roundness="47%" url="https://instagram.com" size="45" /><lb />
                 <SocialMediaIconsReact borderColor="rgba(0,0,0,0.25)" borderWidth="5" borderStyle="dashed" icon="twitter" iconColor="rgba(44,42,42,1)" backgroundColor="rgba(61,233,26,0)" iconSize="5" roundness="47%" url="https://twitter.com" size="45" /><lb />
-                <SocialMediaIconsReact borderColor="rgba(0,0,0,0.25)" borderWidth="5" borderStyle="dashed" icon="facebook" iconColor="rgba(44,42,42,1)" backgroundColor="rgba(61,233,26,0)" iconSize="5" roundness="47%" url="https://facebook.com" size="45" />
+                <SocialMediaIconsReact borderColor="rgba(0,0,0,0.25)" borderWidth="5" borderStyle="dashed" icon="facebook" iconColor="rgba(44,42,42,1)" backgroundColor="rgba(61,233,26,0)" iconSize="5" roundness="47%" url="https://facebook.com" size="45" /> */}
                 <br />
                 <a href="">About IBYG</a>
                 <br />
