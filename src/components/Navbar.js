@@ -9,16 +9,6 @@ import { getLoggedInEmail } from "../lib/auth"
 // ! The one difference in this navigation, are the Link components.
 function Navbar() {
 
-  // const [ loggedOut, setLoggedOut ] = React.useState(false)
-
-  // function handleLogout() {
-  //   if (getLoggedInEmail()) {
-  //     setLoggedOut(true)
-  //   } else
-  //     setLoggedOut(true)
-  // }
-
-
   return (
     <>
       {/* Lines below: Navbar is created in Header and has Home, Plants, Show Plant, Login, and Register tabs that link to the Home.js, PlantIndex.js, PlantShow.js, Login.js, and Register.js components. */}

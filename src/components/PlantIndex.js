@@ -17,6 +17,7 @@ function PlantIndex() {
 
   return <section className="section">
     <div className="container">
+      <h2 className="title is-2 has-text-centered">All Plants</h2>
       <div className="columns is-multiline is-mobile">
         {plant.map((plant, index) => {
           return <div key={index} className="column is-one-quarter-desktop is-third-tablet is-half-mobile">
@@ -42,6 +43,10 @@ function PlantIndex() {
         })}
       </div>
     </div>
+    <footer className="has-text-left">
+      <Link className="has-text-success-dark"
+        to="/">← Return to home</Link>
+    </footer>
   </section>
 }
 

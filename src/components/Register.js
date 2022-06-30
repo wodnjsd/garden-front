@@ -56,7 +56,7 @@ export default function Register() {
   console.log(errors)
 
   return <div className="section">
-    <h2 className="title is-2">
+    <h2 className="title is-2 has-text-centered">
       Register
     </h2>
     <div className="container">

@@ -29,8 +29,7 @@ function Home() {
   return (
     <section className="hero is-fullheight-with-navbar">
       <div className="hero-body">
-        <div className="container">
-        
+        <div className="container">        
           <div className="columns is-multiline is-mobile">
             <header>
               <div className ="head-text">
@@ -65,7 +64,7 @@ function Home() {
           >            
             <div><img src='https://res.cloudinary.com/dlxbte5xh/image/upload/v1655563048/pexels-lachlan-ross-7084309_hxhet2.jpg' alt='Fig Tree'></img></div>
             <div><img src='https://res.cloudinary.com/dlxbte5xh/image/upload/v1656085037/pexels-ekaterina-bolovtsova-9130870_ksqdzw_hw1ruu.jpg' alt='Watermelon Peperomia'></img></div>
-            <div><img src='https://res.cloudinary.com/dlxbte5xh/image/upload/v1656085166/pexels-kulbir-7365049_ze1urb_cfyewy.jpg' alt='English Ivy'></img></div>
+            <div><img src='https://res.cloudinary.com/dlxbte5xh/image/upload/v1656449291/pexels-kulbir-7365049_ze1urb_cfyewy_yru4q6.jpg' alt='English Ivy'></img></div>
             <div><img src='https://res.cloudinary.com/dlxbte5xh/image/upload/v1656085351/pexels-karolina-grabowska-5706224_jq5fgp_ykwos8.jpg' alt='Chinese Money Plant'></img></div>
           </Carousel>
           
