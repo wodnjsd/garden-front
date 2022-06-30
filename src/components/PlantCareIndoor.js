@@ -12,9 +12,9 @@ function PlantCareIndoor() {
 
         {/* Header */}
         <div className="row">
-          <h1 className="title is-1 has-text-centered has-text-success-dark">
+          <h3 className="title is-1 has-text-centered">
             Indoor Plant Care
-          </h1>
+          </h3>
         </div>
 
         {/* Article and Video */}
