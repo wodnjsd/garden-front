@@ -44,7 +44,7 @@ export default function Register() {
       console.log(data)
       // ! Navigate to the /login page.
       navigate('/login')
-      alert("You have now egistered!")
+      alert("You have now registered!")
 
     } catch (error) {
       // ! Print out the response form the backend if there's an error

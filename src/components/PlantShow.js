@@ -1,6 +1,6 @@
 import React from "react"
 import { useParams, useNavigate } from "react-router-dom"
-import { isCreator, getLoggedInUserId } from '../lib/auth'
+import { isCreator, getLoggedInUserId, getLoggedInEmail } from '../lib/auth'
 import axios from 'axios'
 
 function PlantShow() {
@@ -20,17 +20,20 @@ function PlantShow() {
 
   async function handleCart() {
     try {
-      await axios.post(`/api/plants/${plant._id}`, 
-      // const { data } = await axios.post(
-      //   `/api/plants/${plant._id}`,
+      await axios.post(`/api/plants/${plant._id}`,
+        // const { data } = await axios.post(
+        //   `/api/plants/${plant._id}`,
         { content: plant },
         {
           headers: { Authorization: `Bearer ${localStorage.getItem('token')}` },
         }
       )
-      // setUser(data)
       console.log()
+
     } catch (e) {
+      if (!getLoggedInEmail()) {
+        alert("Please log in first!")
+      }
       console.log(e)
     }
   }
@@ -119,7 +122,7 @@ function PlantShow() {
                 <hr />
                 <p>{"£" + plant.price}</p>
                 <hr />
-                <button className="button is-success"
+                <button className="button is-success is-light"
                   onClick={handleCart}>
                   Add to Cart
                 </button>
@@ -150,8 +153,11 @@ function PlantShow() {
             })}
             {getLoggedInUserId() && <article className="media">
               <div className="media-content">
+
                 <div className="field">
-                  <p className="control">
+                  <div className="control">
+
+
                     <textarea
                       className="textarea"
                       placeholder="Make a comment.."
@@ -159,7 +165,7 @@ function PlantShow() {
                       onChange={(event) => setReviewContent(event.target.value)}
                     >
                     </textarea>
-                  </p>
+                  </div>
                 </div>
                 <div className="field">
                   <p className="control">
