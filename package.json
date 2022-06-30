@@ -24,6 +24,7 @@
     "react-use-cart": "^1.13.0",
     "sass": "^1.49.0",
     "save": "^2.5.0",
+    "styled-icons": "^10.45.0",
     "survey-core": "^1.9.37",
     "survey-react-ui": "^1.9.38"
   },

@@ -45,8 +45,7 @@ function Home() {
           </div>
           
 
-          <p className="subtitle is-5">Some recent purchases . . .</p>
-          
+          <p className="subtitle is-5">Some recent purchases . . .</p>          
           <Carousel 
             swipeable={false}
             draggable={false}
@@ -56,24 +55,53 @@ function Home() {
             infinite={true}
             autoPlaySpeed={1000}
             keyBoardControl={true}
-            customTransition="all .5"
+            customTransition="all 1"
             transitionDuration={500}
             containerClass="carousel-container"
             removeArrowOnDeviceType={["tablet", "mobile"]}
             itemClass="carousel-item-padding-40-px"
-          >            
-            <div><img src='https://res.cloudinary.com/dlxbte5xh/image/upload/v1655563048/pexels-lachlan-ross-7084309_hxhet2.jpg' alt='Fig Tree'></img></div>
-            <div><img src='https://res.cloudinary.com/dlxbte5xh/image/upload/v1656085037/pexels-ekaterina-bolovtsova-9130870_ksqdzw_hw1ruu.jpg' alt='Watermelon Peperomia'></img></div>
-            <div><img src='https://res.cloudinary.com/dlxbte5xh/image/upload/v1656449291/pexels-kulbir-7365049_ze1urb_cfyewy_yru4q6.jpg' alt='English Ivy'></img></div>
-            <div><img src='https://res.cloudinary.com/dlxbte5xh/image/upload/v1656085351/pexels-karolina-grabowska-5706224_jq5fgp_ykwos8.jpg' alt='Chinese Money Plant'></img></div>
+          >          
+            <div className="card">
+              <div className="card-content">
+                <div className="media">
+                  <div className="media-content">
+                    <img src='https://res.cloudinary.com/dlxbte5xh/image/upload/v1655563048/pexels-lachlan-ross-7084309_hxhet2.jpg' alt='Fig Tree'></img>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="card">
+              <div className="card-content">
+                <div className="media">
+                  <div className="media-content">
+                    <img src='https://res.cloudinary.com/dlxbte5xh/image/upload/v1656085037/pexels-ekaterina-bolovtsova-9130870_ksqdzw_hw1ruu.jpg' alt='Watermelon Peperomia'></img>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="card">
+              <div className="card-content">
+                <div className="media">
+                  <div className="media-content">
+                    <img src='https://res.cloudinary.com/dlxbte5xh/image/upload/v1656449291/pexels-kulbir-7365049_ze1urb_cfyewy_yru4q6.jpg' alt='English Ivy'></img>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="card">
+              <div className="card-content">
+                <div className="media">
+                  <div className="media-content">    
+                    <img src='https://res.cloudinary.com/dlxbte5xh/image/upload/v1656085351/pexels-karolina-grabowska-5706224_jq5fgp_ykwos8.jpg' alt='Chinese Money Plant'></img>
+                  </div>
+                </div>
+              </div>
+            </div>
           </Carousel>
           
           <footer className="footer">
             <div className="content has-text-centered">
               <div className="container">
-                {/* <SocialMediaIconsReact borderColor="rgba(0,0,0,0.25)" borderWidth="5" borderStyle="dashed" icon="instagram" iconColor="rgba(44,42,42,1)" backgroundColor="rgba(61,233,26,0)" iconSize="5" roundness="47%" url="https://instagram.com" size="45" /><lb />
-                <SocialMediaIconsReact borderColor="rgba(0,0,0,0.25)" borderWidth="5" borderStyle="dashed" icon="twitter" iconColor="rgba(44,42,42,1)" backgroundColor="rgba(61,233,26,0)" iconSize="5" roundness="47%" url="https://twitter.com" size="45" /><lb />
-                <SocialMediaIconsReact borderColor="rgba(0,0,0,0.25)" borderWidth="5" borderStyle="dashed" icon="facebook" iconColor="rgba(44,42,42,1)" backgroundColor="rgba(61,233,26,0)" iconSize="5" roundness="47%" url="https://facebook.com" size="45" /> */}
                 <br />
                 <a href="">About IBYG</a>
                 <br />
