@@ -59,8 +59,8 @@ export default function Register() {
     <h2 className="title is-2">
       Register
     </h2>
-    <div className="box">
-      <div className="container">
+    <div className="container">
+      <div className="box">      
         <form onSubmit={handleSubmit}>
           <div className="field">
             <label className="label">Username</label>
