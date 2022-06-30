@@ -47,7 +47,6 @@ function CreatePlant() {
     <section className="section">
       <div className="container">
         <form onSubmit={handleSubmit}>
-          {/* // ! Me Being Extremely Fancy 🤪: */}
           {['name', 'commonName', 'about', 'likes', "size", "image", "price"].map(field => {
             return <div key={field} className="field">
               <label className="label">
@@ -64,19 +63,6 @@ function CreatePlant() {
               </div>
             </div>
           })}
-          {/* <label className="label">
-            {'Types'}
-          </label> */}
-          {/* <Select
-            defaultValue={[]}
-            isMulti
-            name="colors"
-            options={pokeTypes}
-            className="basic-multi-select"
-            classNamePrefix="select"
-            onChange={(types) => setFormData({ ...formData, types })}
-            value={formData.types}
-          /> */}
           <button className="button mt-5 is-success">Submit</button>
         </form>
       </div>

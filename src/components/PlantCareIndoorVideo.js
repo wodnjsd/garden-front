@@ -17,8 +17,6 @@ const IndoorPlantCareVideo = () => {
   )
 }
 
-
-
 ReactDOM.render(
   <IndoorPlantCareVideo />,
   document.getElementById('root')

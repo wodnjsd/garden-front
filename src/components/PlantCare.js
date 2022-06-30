@@ -11,9 +11,9 @@ function PlantCare() {
 
 
         <div className="row">
-          <h1 className="title is-1 has-text-centered has-text-success-dark">
+        <h3 className="title is-1 has-text-centered">
             Show your plant purchase some TLC
-          </h1>
+          </h3>
         </div>
 
 
