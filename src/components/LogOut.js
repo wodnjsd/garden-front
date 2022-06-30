@@ -1,19 +1,14 @@
 // import React, { useState } from 'react'
-// import { useNavigate } from 'react-router-dom'
-// import axios from 'axios'
+// // import axios from 'axios'
 
 
-// export default function Logout() {
+// export default function getLoggedIn() {
 
-//   const navigate = useNavigate();
+//   const [ loggedOut, setLoggedOut ] = React.useState(false)
 
-//   async function logOutEvent(event){
-//     event.preventDefault()
-//     localStorage.clear();
-//     navigate('/');
+//   function handleLogout() {
+//     setLoggedOut(!loggedOut)
+//     if (loggedOut === true) {
+//       localStorage.clear()
+//     }
 //   }
-  
-//   return {
-//     <button onClick={logOutEvent()}>Log Out</button>
-//   }
-// }
