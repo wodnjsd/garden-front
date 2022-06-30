@@ -34,7 +34,7 @@ function Home() {
             <header>
               <div className ="head-text">
                 <div className ="head-image">
-                  <img src = {require('../images/pexels-samuel-crosland-2557232_qlespz.jpg')} alt = "I Beg Your Garden?!" />
+                  <img src = {require('../images/pexels-samuel-crosland-2557232_qlespz (1).jpg')} alt = "I Beg Your Garden?!" />
                 </div>
                 <div className='text-on-image'>
                   <h3 className="title is-1 has-text-centered">I Beg your Garden?!</h3>
@@ -45,7 +45,7 @@ function Home() {
           </div>
           
 
-          <p className="subtitle is-4">Some recent purchases . . .</p>
+          <p className="subtitle is-5">Some recent purchases . . .</p>
           
           <Carousel 
             swipeable={false}
