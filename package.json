@@ -6,7 +6,6 @@
     "@babel/eslint-parser": "^7.16.5",
     "axios": "^0.27.2",
     "bulma": "^0.9.4",
-    "carousel-react-rcdev": "^0.0.4",
     "eslint": "^8.7.0",
     "eslint-plugin-jsx": "^0.1.0",
     "eslint-plugin-jsx-a11y": "^6.5.1",
@@ -15,7 +14,6 @@
     "http-proxy-middleware": "^2.0.6",
     "react": "^17.0.2",
     "react-confetti": "^6.1.0",
-    "react-custom-roulette": "^1.2.0",
     "react-dom": "^17.0.2",
     "react-icons": "^4.4.0",
     "react-images-carousel": "^2.1.1",
@@ -26,11 +24,11 @@
     "react-use-cart": "^1.13.0",
     "sass": "^1.49.0",
     "save": "^2.5.0",
-    "social-media-icons-react": "^1.1.10",
     "survey-core": "^1.9.37",
     "survey-react-ui": "^1.9.37"
   },
   "devDependencies": {
+    "eslint-plugin-react": "^7.30.1",
     "react-scripts": "^5.0.1"
   },
   "scripts": {

@@ -1,13 +1,22 @@
 // Line below: import { Link } allows you to use link component for us to link all the components together inside the Navbar
-import { Link } from "react-router-dom"
+import { Link, useLocation } from "react-router-dom"
 // import React runs react
 import React from "react"
 
 import { getLoggedInEmail } from "../lib/auth"
 
 //Lines below: create Navbar function
+
 // ! The one difference in this navigation, are the Link components.
 function Navbar() {
+
+  const [loggedIn, setLoggedIn] = React.useState(false)
+  const navigate = useLocation()
+
+  React.useEffect(() => {
+    setLoggedIn(getLoggedInEmail())
+  }, [navigate])
+
 
   return (
     <>
@@ -16,7 +25,7 @@ function Navbar() {
         {/* Lines below: "navbar is-dark", "container", "navbar-brand", "navbar-item" imports class names from bulma */}
         <nav className="navbar is-light">
           <div className="container">
-            <div className="navbar-brand">
+            <div className="navbar-start">
               {/*Line below: Link to="/" creates default page as Home page */}
               <Link to="/" className="navbar-item">
                 {/* Line below: Home tab */}
@@ -30,27 +39,30 @@ function Navbar() {
                 {/* Line below: PlantCare.js tab */}
                 <h2>Plant Care</h2>
               </Link>
-              {/* Line below: Link to="/plants/:plantId" creates a link params variable that changes based on which plant name button we click on. Example: if we click on Cactus, the link will be /plants/cactus */}
+              <Link to="/Questionnaire" className="navbar-item">
+                {/* /* Line below: PlantIndex.js. tab */}
+                <h2>Questionnaire</h2>
+              </Link>
+            </div>
+            {/* Line below: Link to="/plants/:plantId" creates a link params variable that changes based on which plant name button we click on. Example: if we click on Cactus, the link will be /plants/cactus */}
 
+            <div className="navbar-end">
               {(localStorage.getItem('admin') === 'true') &&
                 <Link to="/createplant" className="navbar-item">
                   {/* Line below: Cart.js tab */}
                   <h2>Create Plant</h2>
                 </Link>}
-          
-              <Link to="/Questionnaire" className="navbar-item">
-                {/* /* Line below: PlantIndex.js. tab */}
-                <h2>Questionnaire</h2>
-              </Link>
+
+
               <Link to="/Cart" className="navbar-item">
                 {/* Line below: Cart.js tab */}
                 <h2>Cart</h2>
               </Link>
-              {!getLoggedInEmail() && <Link to="/login" className="navbar-item">
+              {!loggedIn && <Link to="/login" className="navbar-item">
                 {/* Line below: Login.js tab */}
                 <h2>Login</h2>
-              </Link>}  
-              {getLoggedInEmail() && <Link to="/" className="navbar-item"
+              </Link>}
+              {loggedIn && <Link to="/" className="navbar-item"
                 onClick={localStorage.clear()}>
                 <h2>Logout</h2>
               </Link>}
@@ -60,6 +72,7 @@ function Navbar() {
               </Link>
             </div>
           </div>
+
         </nav>
       </header>
     </>
