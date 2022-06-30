@@ -8,8 +8,6 @@ function Cart() {
   const [cart, setCart] = React.useState(null);
   const { plantName } = useParams()
   const [checkOut, setCheckOut] = React.useState(false)
-  // const [total, setTotal] = React.useState(0)
-  // let data = null
 
   React.useEffect(() => {
     async function fetchCart() {
