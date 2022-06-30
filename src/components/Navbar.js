@@ -63,7 +63,7 @@ function Navbar() {
                 <h2>Login</h2>
               </Link>}
               {loggedIn && <Link to="/" className="navbar-item"
-                onClick={localStorage.clear()}>
+                onClick={localStorage.clear}>
                 <h2>Logout</h2>
               </Link>}
               <Link to="/register" className="navbar-item">
