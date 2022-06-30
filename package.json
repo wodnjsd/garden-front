@@ -25,7 +25,7 @@
     "sass": "^1.49.0",
     "save": "^2.5.0",
     "survey-core": "^1.9.37",
-    "survey-react-ui": "^1.9.37"
+    "survey-react-ui": "^1.9.38"
   },
   "devDependencies": {
     "eslint-plugin-react": "^7.30.1",
