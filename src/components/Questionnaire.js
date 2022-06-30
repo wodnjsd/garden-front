@@ -1,19 +1,21 @@
 import React from 'react'
 import 'survey-core/modern.min.css';
-import { StylesManager } from 'survey-core';
+import { StylesManager, Model } from 'survey-core';
+import { Survey } from "survey-react-ui";
+
 
 StylesManager.applyTheme("modern");
 
 
 
-function compareAnswer(){
-  let yesCounter = 0;
+// function compareAnswer(){
+//   let yesCounter = 0;
 
   
-}
+// }
 
 function Questionnaire() {
-  const [counter, setCounter] = React.useState(0);
+  // const [counter, setCounter] = React.useState(0);
   const surveyJson = {
     elements: [
       {
@@ -48,11 +50,14 @@ function Questionnaire() {
       }
     ],
   };
+
+  const survey = new Model(surveyJson);
+  survey.focusFirstQuestionAutomatic = false;
   return (
     <section>
       <h1 className="title is-1 has-text-centered has-text-success-dark">Which Plant are you?</h1>
       <p className="subtitle is-3 has-text-centered has-text-success-dark">this is a Qustionnaire in which we will be asking you several questions and through our algorithm we will determine which plant you are.</p>
-      <body>{surveyJson}</body>
+      <body>{ <Survey model={survey}/> }</body>
     </section>
     
   )
