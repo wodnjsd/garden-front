@@ -50,7 +50,7 @@ function Cart() {
   return <section className="section">
     {checkOut ? <PlantConfetti /> : ""}
 
-    <h2 className="title is-2">Your basket</h2>
+    <h2 className="title is-2 has-text-centered">Your basket</h2>
     <div className="container">
       {cart ? (
         cart.map((item, index) => {
