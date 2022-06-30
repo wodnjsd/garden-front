@@ -16,6 +16,11 @@ function Navbar() {
     setLoggedIn(getLoggedInEmail())
   }, [navigate])
 
+  async function logOut() {
+    localStorage.clear()
+
+  }
+
 
   return (
     <>
@@ -61,7 +66,7 @@ function Navbar() {
                 <h2>Login</h2>
               </Link>}
               {loggedIn && <Link to="/" className="navbar-item"
-                onClick={localStorage.clear}>
+                onClick={logOut}>
                 <h2>Logout</h2>
               </Link>}
               <Link to="/register" className="navbar-item">
