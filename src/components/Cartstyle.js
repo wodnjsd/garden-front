@@ -43,8 +43,6 @@ function Cart() {
     setCheckOut(true)
   }
 
-
-
   console.log(cart);
 
   return <section className="section">

@@ -1,10 +1,8 @@
 // Line below: import { Link } allows you to use link component for us to link all the components together inside the Navbar
 import { Link, useLocation } from "react-router-dom"
 import React from "react"
-
 import { getLoggedInEmail } from "../lib/auth"
 
-//Lines below: create Navbar function
 
 // ! The one difference in this navigation, are the Link components.
 function Navbar() {
@@ -44,7 +42,6 @@ function Navbar() {
                 <h2>Plant Care</h2>
               </Link>
               <Link to="/Questionnaire" className="navbar-item">
-                {/* /* Line below: PlantIndex.js. tab */}
                 <h2>Questionnaire</h2>
               </Link>
             </div>
