@@ -29,6 +29,7 @@ Once you've got your Frontend talking to your Backend, time to add some features
 
 * **A `readme.md` file** with:
     * An embedded screenshot of the app
+    ![](images/ReadMe.jpeg)
     * Explanations of the **technologies** used
           - carousel (home), confetti (checkout), react survey.js(questionnaire)
           - Miro and Jira for planning
