@@ -1,6 +1,8 @@
 
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { baseUrl } from "../config"
+
 
 
 function PlantIndex() {
@@ -8,7 +10,7 @@ function PlantIndex() {
 
   React.useEffect(() => {
     const getData = async () => {
-      const res = await fetch('/api/plants')
+      const res = await fetch(`${baseUrl}/plants`)
       const json = await res.json()
       setPlant(json)
     }
