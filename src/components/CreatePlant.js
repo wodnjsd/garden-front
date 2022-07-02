@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
+import { baseUrl } from "../config"
+
 
 function CreatePlant() {
 
@@ -32,7 +34,7 @@ function CreatePlant() {
     }
 
     try {
-      const { data } = await axios.post('/api/plants', newFormData, {
+      const { data } = await axios.post(`${baseUrl}/plants`, newFormData, {
         headers: { Authorization: `Bearer ${token}` },
       })
       console.log(data._id)

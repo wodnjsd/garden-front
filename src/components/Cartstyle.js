@@ -3,6 +3,7 @@ import { useParams, Link } from "react-router-dom";
 import axios from "axios";
 import { getLoggedInUserId } from "../lib/auth";
 import PlantConfetti from "./Confetti"
+import { baseUrl } from "../config"
 
 function Cart() {
   const [cart, setCart] = React.useState(null);
@@ -12,7 +13,7 @@ function Cart() {
   React.useEffect(() => {
     async function fetchCart() {
       try {
-        const { data } = await axios.get(`/api/cart`, {
+        const { data } = await axios.get(`${baseUrl}/cart`, {
           headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
         });
         setCart(data.cart);
@@ -26,11 +27,11 @@ function Cart() {
 
   async function handleDelete() {
     try {
-      await axios.delete(`/api/cart/${plantName}`, {
+      await axios.delete(`${baseUrl}/cart/${plantName}`, {
         headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
       })
       console.log(plantName)
-      const { data } = await axios.get(`/api/cart`, {
+      const { data } = await axios.get(`${baseUrl}/cart`, {
         headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
       });
       setCart(data.cart)

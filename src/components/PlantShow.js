@@ -2,6 +2,8 @@ import React from "react"
 import { useParams, useNavigate } from "react-router-dom"
 import { isCreator, getLoggedInUserId, getLoggedInEmail } from '../lib/auth'
 import axios from 'axios'
+import { baseUrl } from "../config"
+
 
 function PlantShow() {
   const [plant, setPlant] = React.useState(undefined)
@@ -10,14 +12,14 @@ function PlantShow() {
   const { plantId } = useParams()
 
   React.useEffect(() => {
-    fetch(`/api/plants/${plantId}`)
+    fetch(`${baseUrl}/plants/${plantId}`)
       .then(resp => resp.json())
       .then(data => setPlant(data))
   }, [plantId])
 
   async function handleCart() {
     try {
-      await axios.post(`/api/plants/${plant._id}`,
+      await axios.post(`${baseUrl}/plants/${plant._id}`,
         { content: plant },
         {
           headers: { Authorization: `Bearer ${localStorage.getItem('token')}` },
@@ -36,7 +38,7 @@ function PlantShow() {
 
   async function handleDelete() {
     try {
-      await axios.delete(`/api/plants/${plant._id}`, {
+      await axios.delete(`${baseUrl}/plants/${plant._id}`, {
         headers: { Authorization: `Bearer ${localStorage.getItem('token')}` },
       })
       navigate('/plants')
@@ -48,7 +50,7 @@ function PlantShow() {
   async function handleReview() {
     try {
       const { data } = await axios.post(
-        `/api/plants/${plant._id}/reviews`,
+        `${baseUrl}/plants/${plant._id}/reviews`,
         { content: reviewContent },
         {
           headers: { Authorization: `Bearer ${localStorage.getItem('token')}` },

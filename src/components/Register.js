@@ -1,6 +1,7 @@
 import axios from 'axios'
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { baseUrl } from '../config'
 
 export default function Register() {
   // ! Using react router to navigate
@@ -40,7 +41,7 @@ export default function Register() {
     e.preventDefault()
 
     try {
-      const { data } = await axios.post('/api/register', formData) //*axios is an interface over the fetch api, it gives you back a response object with data inside it.
+      const { data } = await axios.post(`${baseUrl}/register`, formData) //*axios is an interface over the fetch api, it gives you back a response object with data inside it.
       console.log(data)
       // ! Navigate to the /login page.
       navigate('/login')

@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
+import { baseUrl } from "../config"
+
 
 export default function Login() {
 
@@ -23,7 +25,7 @@ export default function Login() {
     e.preventDefault()
 
     try {
-      const { data } = await axios.post('/api/login', formData)
+      const { data } = await axios.post(`${baseUrl}/login`, formData)
       localStorage.setItem('token', data.token)
       localStorage.setItem('email', data.user.email)
       console.log(data.token)
