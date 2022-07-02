@@ -19,6 +19,7 @@ The Plant Care page embeds YouTube videos and links external articles on plant c
 - Excalidraw for whiteboarding
 - Visual Studio Code to create product
 - Terminal to install dependencies
+- Command Line Tools
 - npm I to install dependencies
 - MongoDB
 - Node for database seeding
@@ -35,7 +36,9 @@ The Plant Care page embeds YouTube videos and links external articles on plant c
 -  Bulma to import CSS
 - Google Fonts to import fonts for styling
 - Cloudinary to upload images into URLs
-- Netlify for deployment
+- Netlify for frontend deployment
+- Heroku for backend deployment
+- Mongo Atlas to have a working database to deploy on Heroku
 - Github
 
 
