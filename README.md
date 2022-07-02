@@ -51,15 +51,12 @@ The Plant Care page embeds YouTube videos and links external articles on plant c
 
 
  **Presentation** 
-  - Pitch Deck with Miro Planning:
-      https://res.cloudinary.com/dgicm5dgb/image/upload/v1656712649/Project%203%20ReadMe/Miro_nyafao.jpg 
-  - Pitch Deck with Excalidraw whiteboard:
-      https://res.cloudinary.com/dgicm5dgb/image/upload/v1656712639/Project%203%20ReadMe/Excalidraw_vturke.png  
-- Jira Sprint 1:
-      https://res.cloudinary.com/dgicm5dgb/image/upload/v1656712946/Project%203%20ReadMe/Jira1_k1aks1.jpg
-- Jira Sprint 2 and Stretch Goals:
-      https://res.cloudinary.com/dgicm5dgb/image/upload/v1656712945/Project%203%20ReadMe/Jira_2_uwuuuj.jpg 
-
+  - Pitch Deck:
+      # ![](src/images/miro-planning.jpeg)
+      # ![](src/images/whiteboard.jpeg)
+- Jira Board:
+    # ![](src/images/jira-sprint-1.jpeg)
+    # ![](src/images/jira-sprint-2-and-stretch-goals.jpeg)
 **User Stories** 
       https://docs.google.com/document/d/1CrNyAtkU2yVdQW3Xsw_byXqZwaLLTu99/edit 
 
