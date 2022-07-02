@@ -7,16 +7,12 @@ This is an E-commerce React app project that sells plants. The developers built 
 
 Additional components were created such as the Home page. Customers can also register user accounts and log into the website on the Register and Login pages. Users then have the option to logout of their accounts.
 
-The Plants tab shows all the plants from API. When each individual plant is clicked on, users can see all the individual plant data from the API.
+The Plants page shows all the plants from API. When each individual plant is clicked on, users can see all the individual plant data from the API  on a new page.
 
-Users have the option to add reviews to each plant. Users may also add plants to their Cart. The admin user is the only user given the option to create new plants and delete existing plants on the Plant tab.
+Users have the option to add comments reviewing each plant. Users may also add plants to their Cart. The admin user is the only user given the option to create new plants and delete existing plants on the Plant page.
 
-The Plant Care tab embeds YouTube videos and external links on plant care. The Questionnaire tab allows users to take a survey and find out which plant type best suits them.
+The Plant Care page embeds YouTube videos and links external articles on plant care. The Questionnaire tab allows users to take a survey and find out which plant type best suits them.
 
- **General Approach: ?? (a couple paragraphs)**
-Adding more components
-1. Add a `Navbar` so that you can navigate, and hook up both the `/` and `/pokemon` (equivalent) routes so that you can move between a home page and an index page. Your index page should show a list of nice cards.
-2. Create a `ShowPokemon` (equivalent) component, so that when you click on a card it takes you to the ShowPokemon page that just shows a single pokemon. 
 
 **Technologies**
 - Miro and Jira for planning
@@ -65,5 +61,6 @@ Adding more components
       https://docs.google.com/document/d/1CrNyAtkU2yVdQW3Xsw_byXqZwaLLTu99/edit 
 
 
+ ## To Do
  Descriptions of any **unsolved problems** or **major hurdles** you had to overcome
 
