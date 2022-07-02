@@ -46,7 +46,7 @@ function Questionnaire() {
         name: "fifth",
         title: "Last question if you could be a plant which one would you be?",
         type: "radiogroup",
-        choices: ["succulent", "Chinese Money Plant"],
+        choices: ["succulent", "Chinese Money Plant "],
       }
     ],
   };
