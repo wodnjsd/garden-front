@@ -7,7 +7,7 @@ This is an E-commerce React app project that sells plants. The developers built 
 
 Additional components were created such as the Home page. Customers can also register user accounts and log into the website on the Register and Login pages. Users then have the option to logout of their accounts.
 
-The Plants page shows all the plants from API. When each individual plant is clicked on, users can see all the individual plant data from the API on a new page. The API data is influenced by PatchPlants.com.
+The Plants page shows all the plants from API. When each individual plant is clicked on, users can see all the individual plant data from the API on a new page. The API data is inspired by PatchPlants.com.
 
 Users have the option to add comments reviewing each plant. Users may also add plants to their Cart. The admin user is the only user given the option to create new plants and delete existing plants on the Plant page.
 
