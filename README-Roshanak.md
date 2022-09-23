@@ -142,7 +142,7 @@ My group and I thought of the following user stories when designing our website:
 # ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663974452/project%203%20readme%20personal/Image_7-2-22_at_5.12_AM_qukj46.jpg)
 # ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663974453/project%203%20readme%20personal/Image_7-2-22_at_5.12_AM_1_fzmcy5.jpg)
 
-**Project Code:**
+**Project Code** 
 # ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663974505/project%203%20readme%20personal/Image_9-8-22_at_5.41_PM_vagzma.jpg)
 # ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663974507/project%203%20readme%20personal/Image_9-8-22_at_5.39_PM_jsbbz9.jpg)
 
