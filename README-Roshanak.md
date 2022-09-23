@@ -5,8 +5,10 @@ Roshanak Ahmed, Robyn Smith, Jaewon Han, and Jeanzle Albalte
 ### Deployed Project
 https://isnt-wodnjsd-awesome.netlify.app/ 
 
+
 ## Brief
 In a group of four, we were asked to collaboratively build a full-stack MERN app in two weeks, with our own backend and frontend, and deploy it online with a git repository hosted on GitHub. It was required of us to use a RESTful Express API to serve our data from a Mongo database and consume that API with a separate frontend built with React. We were required to implement wireframes and establish core MVP features.
+
 
 ## Overview
 This is an E-commerce React app project that sells plants. The developers built a plant API with back-end endpoints and connected it to React routes on a front-end proxy server. 
@@ -28,6 +30,7 @@ I also had the responsibility of creating the navbar MVP goals so that users cou
 I was in charge of creating the login and registration pages on the frontend, using Bulma to style the forms, and I included validation errors.
 
 Furthermore, I collected README materials and wrote up the general README for the group. In addition, I was in charge of writing up several user stories and reviewing all the user stories that other group members wrote. I was also in charge of creating plant data for 5 plants, and editing plant data descriptions that my group members created.
+
 
 ## Technologies Used
 **Technologies**
@@ -85,6 +88,7 @@ Install Dependencies on Frontend:
   3. Backend: run `npm start`
   4. Frontend: run `npm i`
   5. Frontend: run `npm start`
+
 
 ## Approach Taken
 We created an e-commerce site because we wanted to create an app with a real world application.
@@ -145,6 +149,7 @@ My group and I thought of the following user stories when designing our website:
 **Project Code** 
 # ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663974505/project%203%20readme%20personal/Image_9-8-22_at_5.41_PM_vagzma.jpg)
 # ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663974507/project%203%20readme%20personal/Image_9-8-22_at_5.39_PM_jsbbz9.jpg)
+
 
 ## Blockers and Wins
 **Group Blockers**
