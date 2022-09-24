@@ -120,6 +120,10 @@ My group and I thought of the following user stories when designing our website:
 
 # ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663972611/project%203%20readme%20personal/Image_9-24-22_at_4.36_AM_kv23il.jpg)
 
+I also ensured the components I worked on alone (navbar, plant care, login, and register) and with my group (plant index, plant show) used mobile-first design with Bulma CSS. The following screenshots reflect the view of an iPhone 12 Pro
+# ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1664028408/mobile-first-design%20readmes/3B577E4D-6AE9-4FDD-A0CE-0318E80BBC69_gqaxcl.jpg)
+# ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1664028420/mobile-first-design%20readmes/D2382957-EB78-4A4F-B809-5DCD0CB72DD3_ywegrw.jpg)
+
 
 ## Screenshots
 **Project Pitch Deck**
@@ -171,14 +175,16 @@ I could not fit both indoor and outdoor embedded videos in one page without my c
 - Questionnaire to figure out which plant is for you
 - Checkout Confetti
 - Alert you have logged in or added to cart
+- Every component (aside from the homepage component) uses mobile-first design
 
  **Personal Wins**
 - Embedded YouTube video on Indoor & Outdoor Plant Care
 - Navbar with URL name associated with each component tab we click on
+- Navbar, plant care, login, and register components use mobile-first design with Bulma CSS
 
 
  ## Future Features
-- Media queries to make app responsive to different browsers/tablets/phones
+- -Make the homepage responsive to different browsers/tablets/phones using Bulma CSS
 - Edit user profile and add individual user avatar icon
 - Add search filter to filter by plant category
 - Add plant ratings feature for plant reviews
