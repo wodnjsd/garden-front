@@ -120,7 +120,7 @@ My group and I thought of the following user stories when designing our website:
 
 # ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663972611/project%203%20readme%20personal/Image_9-24-22_at_4.36_AM_kv23il.jpg)
 
-I also ensured the components I worked on alone (navbar, plant care, login, and register) and with my group (plant index, plant show) used mobile-first design with Bulma CSS. The following screenshots reflect the view of an iPhone 12 Pro
+I also ensured the components I worked on alone (navbar, plant care, login, and register) and with my group (plant index, plant show) used mobile-first design with Bulma CSS. The following screenshots reflect the view of an iPhone 12 Pro:
 # ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1664029003/mobile-first-design%20readmes/9CE3B53C-8EE6-4192-B1C0-A5E38F8A0B9B_qcbb0k.jpg)
 # ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1664029015/mobile-first-design%20readmes/4EE0B414-AC6C-4A0D-8339-A7FACBB945E9_pzyuqu.jpg)
 
