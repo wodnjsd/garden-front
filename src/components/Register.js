@@ -61,7 +61,7 @@ export default function Register() {
       Register
     </h2>
     <div className="container">
-      <div className="box">      
+      <div className="box">
         <form onSubmit={handleSubmit}>
           <div className="field">
             <label className="label">Username</label>
@@ -123,7 +123,8 @@ export default function Register() {
               {errors.passwordConfirmation && <small className="has-text-danger">{errors.passwordConfirmation}</small>}
             </div>
           </div>
-          <button className="button">Submit</button>
+          {/* // ! When the user clicks Register, it will POST to our /api/register on the backend. Then we'll get a response from the API that responds with the new user. */}
+          <button className="button">Register</button>
         </form>
       </div>
     </div>
