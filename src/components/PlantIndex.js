@@ -8,6 +8,7 @@ import { baseUrl } from "../config"
 function PlantIndex() {
   const [plant, setPlant] = React.useState([])
 
+  // Fetch all the plants with the API we built
   React.useEffect(() => {
     const getData = async () => {
       const res = await fetch(`${baseUrl}/plants`)
@@ -17,6 +18,7 @@ function PlantIndex() {
     getData()
   }, [])
 
+  // Map all the plants onto the page
   return <section className="section">
     <div className="container">
       <h2 className="title is-2 has-text-centered">All Plants</h2>
