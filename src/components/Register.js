@@ -70,7 +70,7 @@ export default function Register() {
                 className="input"
                 type="text"
                 name={'username'}
-                // ! Adding these 2 fields means your component is 'controlled.'
+                // ! Adding these 2 fields means our component is 'controlled.'
                 value={formData.username}
                 onChange={handleChange}
               />
@@ -85,7 +85,7 @@ export default function Register() {
                 className="input"
                 type="text"
                 name={'email'}
-                // ! Adding these 2 fields means your component is 'controlled.'
+                // ! Adding these 2 fields means our component is 'controlled.'
                 value={formData.email}
                 onChange={handleChange}
               />
@@ -100,7 +100,7 @@ export default function Register() {
                 className="input"
                 type="password"
                 name={'password'}
-                // ! Adding these 2 fields means your component is 'controlled.'
+                // ! Adding these 2 fields means our component is 'controlled.'
                 value={formData.password}
                 onChange={handleChange}
               />
@@ -115,7 +115,7 @@ export default function Register() {
                 className="input"
                 type="password"
                 name={'passwordConfirmation'}
-                // ! Adding these 2 fields means your component is 'controlled.'
+                // ! Adding these 2 fields means our component is 'controlled.'
                 value={formData.passwordConfirmation}
                 onChange={handleChange}
               />

@@ -175,7 +175,7 @@ I could not fit both indoor and outdoor embedded videos in one page without my c
 - Questionnaire to figure out which plant is for you
 - Checkout Confetti
 - Alert you have logged in or added to cart
-- Every component (aside from the homepage component) uses mobile-first design
+- Every component uses mobile-first design
 
  **Personal Wins**
 - Embedded YouTube video on Indoor & Outdoor Plant Care
@@ -184,7 +184,6 @@ I could not fit both indoor and outdoor embedded videos in one page without my c
 
 
  ## Future Features
- - Make the homepage responsive to different browsers/tablets/phones using Bulma CSS
 - Edit user profile and add individual user avatar icon
 - Add search filter to filter by plant category
 - Add plant ratings feature for plant reviews

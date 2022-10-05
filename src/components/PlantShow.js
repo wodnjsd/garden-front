@@ -7,6 +7,7 @@ import { baseUrl } from "../config"
 
 function PlantShow() {
   const [plant, setPlant] = React.useState(undefined)
+  // ! useState for reviews
   const [reviewContent, setReviewContent] = React.useState('')
   const navigate = useNavigate()
   const { plantId } = useParams()
@@ -76,6 +77,7 @@ function PlantShow() {
                 <figure className="image">
                   <img src={plant.image} alt={plant.name} />
                 </figure>
+                {/* // ! Only show the button if the plant was made by the user. */}
                 {isCreator(plant.user._id) && <button
                   className="button is-danger"
                   onClick={handleDelete}
@@ -126,6 +128,9 @@ function PlantShow() {
                 <hr />
               </div>
             </div>
+            {
+              // ! Show our reviews (lots of bulma)
+            }
             <h4 className="title is-4">
               Reviews:
             </h4>
@@ -145,14 +150,17 @@ function PlantShow() {
                 </div>
               </article>
             })}
+            {
+              // ! Little form to POST a comment (again lots of bulma)
+            }
             {getLoggedInUserId() && <article className="media">
               <div className="media-content">
                 <div className="field">
                   <div className="control">
                     <textarea
                       className="textarea"
-                      placeholder="Make a comment.."
-                      // ! Set the comment's content to be what's in the input textarea.
+                      placeholder="Make a review.."
+                      // ! Set the review's content to be what's in the input textarea.
                       onChange={(event) => setReviewContent(event.target.value)}
                     >
                     </textarea>

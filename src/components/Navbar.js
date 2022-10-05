@@ -4,7 +4,6 @@ import React from "react"
 import { getLoggedInEmail } from "../lib/auth"
 
 
-// ! The one difference in this navigation, are the Link components.
 function Navbar() {
 
   const [loggedIn, setLoggedIn] = React.useState(false)
